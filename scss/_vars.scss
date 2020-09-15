@@ -1,0 +1,49 @@
+// Font
+$QuicksandBold-Font: "Quicksand Bold";
+$QuicksandBook-Font: "Quicksand Book";
+$ProximaNova-Font: "Proxima Nova";
+$Myriad-Font: 'Myriad Pro';
+
+// Size
+$mainFontSize: 18px;
+$mainFontWeight: 400;
+$solidFontWeight: 700;
+$mainLineHeight: 22px;
+
+$desktopWidth: 1280px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px; 
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+
+// Main color
+$text-color: #333333;
+$text-color2: #424242;
+$background-colorWhite: #ffffff;
+$background-colorBraun: #aa9b77;
+$background-colorGrey: #f5f6f7;
+$Border-colorGrey: #cccccc;
+$background_colorTheme: #535253;
+
+// Color Sell
+$blue: #165eb9;
+$yellow: #ffe637;
+$grey: #535253;
+$pink: #d3a7ac;
+$white: #ffffff;
+
+// Border Color
+$border-base: #dcdfe6;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+$border-lightex: #f2f6fc;
+
+@mixin color__item {
+        display: inline-block;
+        margin-left: 5px;
+        min-width: 22px;
+        min-height: 22px;
+        border-radius: 50%;
+        user-select: none;
+}

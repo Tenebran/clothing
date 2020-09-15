@@ -1,0 +1,66 @@
+.footer{
+    padding: 109px 0 116px 0;
+    background-color: $text-color2;
+    color: $background-colorWhite;
+    font-family: $QuicksandBold-Font;
+    font-weight: $mainFontWeight;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__title{
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 0 0 22px;
+    }
+
+    &__subtitle{
+        display: inline-block;
+        max-width: 306px;
+        font-size: 10px;
+        line-height: 20px;
+        text-transform: uppercase;
+        opacity: 0.6;
+    }
+
+    &__contact{
+        display: flex;
+    }
+
+    &__link{
+        color: $background-colorWhite;
+        font-family: $QuicksandBold-Font;
+        font-weight: $mainFontWeight;
+        opacity: 0.6;
+
+        &:not(:last-child):after{
+            content: "I";
+            margin-left: 8px;
+        }
+    }
+
+    &__info{
+        margin: 17px 0 0;
+        opacity: 0.8;
+    }
+    
+    &__block__right{
+        padding: 43px 0 0;
+        min-width: 306px;
+    }
+}
+
+
+@media (max-width: $tableWidth){
+    .footer{
+
+        &__wrapper{
+           display: block;
+           text-align: center;
+        }
+        
+    }
+}

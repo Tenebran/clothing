@@ -1,0 +1,53 @@
+.about{
+    background-color: $background-colorBraun;
+    padding: 77px 0 70px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        max-width: 710px;
+        min-height: 250px;
+        position: relative;
+        margin: 0 auto;
+    }
+    &__title{
+        text-transform: uppercase;
+        padding: 0 12px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: $background-colorBraun;
+    }
+    
+
+    &__subtitle{
+        max-width: 470px;
+        padding: 0 10px;
+        color: $text-color2;
+        font-family: "Quicksand Bold";
+        font-size: 16px;
+        font-weight: $mainFontWeight;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: $tableWidth){
+    .about{
+        &__wrapper{
+            max-width: 460px;
+
+        }
+    }
+}
+
+@media (max-width: $smPhoneWidth){
+    .about{
+        &__wrapper{
+            max-width: 300px;
+
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.theme{
+    padding: 24px 0;
+    background-color: $background_colorTheme;
+
+    &__info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__icon{
+        color: $text-color2;
+        font-size: 20px;
+        margin: 0 20px 0;
+    }
+    &__link{
+        color: $background-colorWhite;
+        font-family: $QuicksandBold-Font;
+        font-size: 16px;
+        font-weight: $mainFontWeight;
+    }
+}
+
+@media (max-width: $phoneWidth){
+    .theme{
+
+        &__icon{
+            margin-bottom: 10px;
+        }
+        &__info{
+            justify-content: center;
+        }
+    }
+}

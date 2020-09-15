@@ -1,0 +1,116 @@
+.content__conteiner__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 100;
+    padding: 40px 0 0;
+
+    &__logo{
+        &__icon{
+            display: block;
+            background: url(../image/icon/Livello_8.png) no-repeat;
+            background-size: cover;
+            width: 53px;
+            height: 40px;
+        }
+    }
+
+    &__link{
+        padding: 14px 0 0 0;
+    }
+    
+    &__nav__link{
+        color: white;
+        font-family: $QuicksandBold-Font;
+        font-size: $mainFontSize;
+        letter-spacing: 1px;
+    }
+
+    &__nav__link:not(:last-child){
+        padding: 0 28px 0 0;
+    }
+}
+
+@media (max-width: $smDesktopWidth){
+  
+   
+    .header__button_open + .header__link{
+        display: block;
+    }
+
+    .header__link{
+        display: none;
+        background-color: $background-colorBraun;  
+    }
+    .header{
+        padding: 15px 15px 0; 
+        
+        &__logo{
+            &__icon{
+               margin: 8px 0 0 0;
+            }
+        }
+
+        &__button{
+            margin-top: 0px;
+            top: 20px;
+            width: 50px ;
+            height: 50px;
+            background: url(../image/icon/menu.png) no-repeat;
+            background-size: cover;
+            cursor: pointer;
+            &_open{
+               
+                background: url(../image/icon/close.png);
+                background-size: cover;
+            }
+        }
+        &__link{
+            position: fixed;
+            flex-direction: column;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 15px 0 0;
+        }
+     &__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__link{
+            margin: 0 0 20px;
+        }
+    }
+}
+}
+
+@media (max-width: $smPhoneWidth){
+    .header{
+        &__logo{
+            &__icon{
+               margin: 8px 0 0 0;
+            }
+        }
+       
+
+        &__logo{
+            font-size: 20px;
+            }
+            &__button{
+                height: 50px;
+                width: 50px;
+            }
+            &__link{
+                top: 70px;
+            }
+    }
+}

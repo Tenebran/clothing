@@ -1,0 +1,117 @@
+.sell{
+    padding: 65px 0 ;
+    background-color: $background-colorGrey;
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    &__check{
+        display: flex;
+        justify-content: space-between;
+        color: $text-color;
+        font-family: $QuicksandBold-Font;
+        font-size: $mainFontSize;
+        font-weight:$mainFontWeight;
+        text-transform: uppercase;
+       
+        &__conteiner{
+            display: flex;
+            position: relative;
+            margin-right: 40px;
+        }
+    }
+
+    &__checkbox__label{
+        padding-left: 45px;
+        cursor: pointer;
+        user-select: none;
+
+        &::before{
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            border: 2px solid $Border-colorGrey;
+            background-color: #ffffff;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            z-index: 1;
+            border-radius: 3px;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            width: 15px;
+            height: 12px;
+            background: url(../image/icon/fa-check.svg) no-repeat;
+            background-size: 15px 12px;
+            position: absolute;
+            left: 5px;
+            top: 3px;
+            z-index: 2;
+            opacity: 0;
+        }
+    }
+
+    &__cheking{
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+    
+    &__link{
+        background-color: $background-colorBraun;
+        color: $background-colorWhite;
+        font-family: "$QuicksandBold-Font";
+        font-size: 14px;
+        font-weight: $mainFontWeight;
+        text-transform: uppercase;
+        padding: 20px 34px;
+        border-radius: 3px;
+        user-select: none;
+    }
+    &__cheking:checked + &__checkbox__label:before{
+        background-color: #ffffff;
+        border-color: #aa9b77;
+    }
+
+    &__cheking:checked + &__checkbox__label::after{
+        opacity: 1;
+    }
+
+    &__men__card{
+        
+        &::after{
+            content: "Men";
+        }
+    }
+
+}
+
+@media (max-width: $tableWidth){
+.sell{
+    &__check{
+        display: block;
+    }
+
+    &__button{
+        margin-top: 50px;
+    }
+}
+}
+
+@media (max-width: $phoneWidth){
+    .sell{
+        &__list{
+            display: block;
+        }
+
+        &__check__conteiner{
+            margin-bottom: 20px;
+        }
+    }
+}
