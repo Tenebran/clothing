@@ -107,11 +107,19 @@
 @media (max-width: $phoneWidth){
     .sell{
         &__list{
-            display: block;
+            display: flex;
+            justify-content: center;
         }
 
         &__check__conteiner{
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+
+        &__button{
+          display: flex;
+          justify-content: center;
+          margin: 10px 0 0;
         }
     }
 }

@@ -38,7 +38,7 @@
     }
 }
 
-@media (max-width: $smDesktopWidth){
+@media (max-width: $tableWidth){
   
    
     .header__button_open + .header__link{
@@ -50,7 +50,9 @@
         background-color: $background-colorBraun;  
     }
     .header{
-        padding: 15px 15px 0; 
+        padding: 15px 20px; 
+        background-color: $background-colorBraun;
+        position: fixed;
         
         &__logo{
             &__icon{
